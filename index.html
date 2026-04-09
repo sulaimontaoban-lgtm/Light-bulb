@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Bulb</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <div class="app">
+        <div class="bulb-wrap">
+            <div class="bulb" id="bulb"></div>
+            <div cl class="status mt-5" id="status">POWER OFF</div>
+        </div>
+
+        <div class="colors">
+            <button class="color-btn red" onclick="setColor('red')">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+            <button class="color-btn green" onclick="setColor('green')">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+            <button class="color-btn blue" onclick="setColor('blue')">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+            <button class="color-btn yellow" onclick="setColor('yellow')">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+        </div>
+
+        <div class="main-controls">
+            <button class="ctrl power" id="powerBtn" onclick="togglePower()">
+                <i class="fa-solid fa-power-off"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
